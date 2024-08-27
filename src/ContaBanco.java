@@ -13,7 +13,7 @@ public class ContaBanco {
         while (true) {
             System.out.println("Por favor digite o número da agência");
             agencia = scanner.nextLine();
-            if (agencia.matches("[0-9-]+")) {
+            if (agencia.matches("[0-9-]+")) { //Aceita apenas números de 0 a 9, sem digitar letras
                 break;
             } else {
                 System.out.println("Erro, digite o número da sua agência. Exemplo: 014-7");
@@ -36,7 +36,7 @@ public class ContaBanco {
         while (true) {
             System.out.println("Digite o seu nome.");
             nomeCliente = scanner.nextLine();
-            if (nomeCliente.matches("[A-Za-z ]+")) {
+            if (nomeCliente.matches("[A-Za-z ]+")) { //Aceita apenas letras, mesmo sendo uma string
                 break;
             } else {
                 System.out.println("Erro digite um nome válido. Exemplo: Carla, Rodrigo, Luiz");
