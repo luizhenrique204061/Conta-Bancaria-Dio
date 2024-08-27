@@ -12,8 +12,8 @@ public class ContaBanco {
         //Validação da Agência
         while (true) {
             System.out.println("Por favor digite o número da agência");
-            if (scanner.hasNext()) {
-                agencia = scanner.nextLine();
+            agencia = scanner.nextLine();
+            if (agencia.matches("[0-9-]+")) {
                 break;
             } else {
                 System.out.println("Erro, digite o número da sua agência. Exemplo: 014-7");
@@ -27,6 +27,7 @@ public class ContaBanco {
                 scanner.nextLine();
                 break;
             } else {
+                scanner.next();
                 System.out.println("Erro, digite o número da sua conta bancária. Exemplo: 1004");
             }
         }
@@ -36,7 +37,6 @@ public class ContaBanco {
             System.out.println("Digite o seu nome.");
             nomeCliente = scanner.nextLine();
             if (nomeCliente.matches("[A-Za-z ]+")) {
-            
                 break;
             } else {
                 System.out.println("Erro digite um nome válido. Exemplo: Carla, Rodrigo, Luiz");
