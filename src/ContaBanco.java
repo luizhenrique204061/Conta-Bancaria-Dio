@@ -19,6 +19,7 @@ public class ContaBanco {
                 System.out.println("Erro, digite o número da sua agência. Exemplo: 014-7");
             }
         } 
+        
         //Validação da conta bancária
         while (true) {
             System.out.println("Digite o número da sua conta bancária.");
